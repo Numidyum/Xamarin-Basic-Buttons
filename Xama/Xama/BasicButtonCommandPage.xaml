@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Xama"
+             x:Class="Xama.BasicButtonCommandPage">
+
+    <ContentPage.BindingContext>
+        <local:CommandDemoViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout BackgroundColor="#009A58">
+        <Label Text="{Binding Number, StringFormat='Şimdiki değer: {0}'}"
+               FontSize="Large"
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="Center" TextColor="#FFFFFF" />
+
+        <Button Text="2 ile çarp"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Command="{Binding MultiplyBy2Command}" CornerRadius="50" TextColor="#FFFFFF" BackgroundColor="#000000" BorderColor="#FFFFFF" BorderWidth="2" />
+
+        <Button Text="2 ye böl"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Command="{Binding DivideBy2Command}" CornerRadius="50" BorderWidth="2" BorderColor="#FFFFFF" BackgroundColor="#000000" TextColor="#FFFFFF" />
+    </StackLayout>
+</ContentPage>

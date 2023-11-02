@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "9PK/jRs4wrPf9iBu0hZA12hiRDOgB8jN8zTVmP1He3XcH3XjuUwJCtvEgzsibF24fdApdWd+/EPZ9GJLgAqsjw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Numidium\\source\\repos\\Xama\\Xama\\Xama\\Xama.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Numidium\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Numidium\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Numidium\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Numidium\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Numidium\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Xama"
+             x:Class="Xama.MainPage">
+
+    <StackLayout BackgroundColor="#337782" >
+        <Button Text="Basit Button"
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type local:BasicButtonClickPage}" BorderWidth="2" TextColor="#FFFFFF" Font="" BackgroundColor="#1FBCFF" BorderColor="#000000" CornerRadius="50" Padding="0" Margin="0,30" />
+
+        <Button Text="Resim Butonu"
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type local:ImageButtonDemoPage}" BorderColor="#000000" BackgroundColor="#2C42FE" BorderWidth="2" TextColor="#FFFFFF" CornerRadius="50" Margin="0,0,0,30" />
+
+        <Button Text="Kod Butonu"
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type local:CodeButtonClickPage}" BorderColor="#000000" BackgroundColor="#2CFBFE" BorderWidth="2" TextColor="#FFFFFF" CornerRadius="50" Margin="0,0,0,30" />
+
+        <Button Text="Basit buton komutu"
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type local:BasicButtonCommandPage}" BorderColor="#000000" BackgroundColor="#2CFE70" BorderWidth="2" TextColor="#FFFFFF" CornerRadius="50" Margin="0,0,0,30" />
+
+        <Button Text="Dokun ve bırak butonu"
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type local:PressAndReleaseButtonPage}" BorderColor="#000000" BackgroundColor="#FE2CE5" BorderWidth="2" TextColor="#FFFFFF" CornerRadius="50" Margin="0,0,0,30" />
+
+        <Button Text="Toggle Buttonu"
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type local:ToggleButtonDemoPage}" BackgroundColor="#D6D23F" BorderWidth="2" BorderColor="#000000" TextColor="#0D00FF" CornerRadius="50" Margin="0,0,0,30" />
+
+        <Button Text="Button görünümü"
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type local:ButtonAppearancePage}" BackgroundColor="#167B34" BorderWidth="2" BorderColor="#000000" TextColor="#E406F4" CornerRadius="50" />
+
+    </StackLayout>
+
+</ContentPage>

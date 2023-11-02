@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xama.ImageButtonDemoPage">
+    
+    <FlexLayout Direction="Column"
+                JustifyContent="SpaceEvenly"
+                AlignItems="Center" BackgroundColor="#64390E">
+
+        <FlexLayout.Resources>
+            <Style TargetType="Button">
+                <Setter Property="ImageSource">
+                    <OnPlatform x:TypeArguments="ImageSource">
+                        <On Platform="iOS, Android" Value="MonkeyFace.png" />
+                        <On Platform="UWP" Value="Assets/MonkeyFace.png" />
+                    </OnPlatform>
+                </Setter>
+            </Style>
+        </FlexLayout.Resources>
+
+        <Button BackgroundColor="#FFFFFF" CornerRadius="25" BorderColor="#000000" BorderWidth="3" Scale="3">
+            <Button.ImageSource>
+                <OnPlatform x:TypeArguments="ImageSource">
+                    <On Platform="iOS, Android" Value="MonkeyFace.png" />
+                    <On Platform="UWP" Value="Assets/MonkeyFace.png" />
+                </OnPlatform>
+            </Button.ImageSource>
+            
+        </Button>
+    </FlexLayout>
+</ContentPage>

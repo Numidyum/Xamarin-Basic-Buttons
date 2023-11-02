@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Xama"
+             x:Class="Xama.ToggleButtonDemoPage" BackgroundColor="#D32A2A">
+
+    <ContentPage.Resources>
+        <Style TargetType="local:ToggleButton">
+            <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+        </Style>
+    </ContentPage.Resources>
+
+    <StackLayout Padding="10, 0">
+        <local:ToggleButton Toggled="OnItalicButtonToggled" BackgroundColor="#6DFF00" CornerRadius="50" BorderColor="#000000">
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup Name="ToggleStates">
+                    <VisualState Name="ToggledOff">
+                        <VisualState.Setters>
+                            <Setter Property="Text" Value="İtalik kapalı" />
+                            <Setter Property="BackgroundColor" Value="#C0C0C0" />
+                            <Setter Property="TextColor" Value="Black" />
+                        </VisualState.Setters>
+                    </VisualState>
+
+                    <VisualState Name="ToggledOn">
+                        <VisualState.Setters>
+                            <Setter Property="Text" Value=" İtalik açık " />
+                            <Setter Property="BackgroundColor" Value="#404040" />
+                            <Setter Property="TextColor" Value="White" />
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+        </local:ToggleButton>
+
+        <local:ToggleButton Toggled="OnBoldButtonToggled" BackgroundColor="#003BFF" TextColor="#FFFFFF" CornerRadius="50">
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup Name="ToggleStates">
+                    <VisualState Name="ToggledOff">
+                        <VisualState.Setters>
+                            <Setter Property="Text" Value="Kalın kapalı" />
+                            <Setter Property="BackgroundColor" Value="#C0C0C0" />
+                            <Setter Property="TextColor" Value="Black" />
+                        </VisualState.Setters>
+                    </VisualState>
+
+                    <VisualState Name="ToggledOn">
+                        <VisualState.Setters>
+                            <Setter Property="Text" Value="Kalın açık" />
+                            <Setter Property="BackgroundColor" Value="#404040" />
+                            <Setter Property="TextColor" Value="White" />
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+        </local:ToggleButton>
+
+        <Label x:Name="label"
+               Text="İki düğmeyi kullanarak italik veya kalın yazı tipiyle biçimlendirilebilecek bazı örnek metinlerden sadece küçük bir pasaj."
+               FontSize="Large"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="CenterAndExpand" TextColor="#FFFFFF" />
+
+    </StackLayout>
+</ContentPage>
